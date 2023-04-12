@@ -10,7 +10,7 @@ const schemaRes = await client.schema.getter().do();
 
 console.log(schemaRes)
 
-const img = readFileSync('./img/cat-inside.jpg');
+const img = readFileSync('./img/4wgdi9.jpg');
 
 const b64 = Buffer.from(img).toString('base64');
 
@@ -18,10 +18,9 @@ await client.data.creator()
   .withClassName('Meme')
   .withProperties({
     image: b64,
-    text: 'cat meme'
+    text: 'potato morpheus'
   })
   .do();
-
 
 const test = Buffer.from( readFileSync('./test.jpg') ).toString('base64');
 
